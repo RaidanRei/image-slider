@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Base styles */
+/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Header section */
+/* Header/Navigation Styles */
 header {
     width: 100%;
     max-width: 100%;
@@ -39,7 +39,7 @@ a:hover {
     border-radius: 2px;
 }
 
-/* carousel */
+/* Carousel Wrapper */
 .carousel {
     width: 100vw;
     height: 100vh;
@@ -48,6 +48,7 @@ a:hover {
     position: relative;
 }
 
+/* Each Slide Item (Positioned Absolutely Like a Deck of Cards) */
 .carousel .list .item {
     width: 180px;
     height: 250px;
@@ -64,6 +65,7 @@ a:hover {
     background-size: cover;
 }
 
+/* The First 2 Items Fill the Screen As Active Slides */
 .carousel .list .item:nth-child(1),
 .carousel .list .item:nth-child(2) {
     top: 0;
@@ -74,6 +76,7 @@ a:hover {
     height: 100%;
 }
 
+/* Next Items Are Positioned To the Right (Like a 3D Queue) */
 .carousel .list .item:nth-child(3) {
     left: 67%;
 }
@@ -92,9 +95,10 @@ a:hover {
 
 .carousel .list .item:nth-child(n+7) {
     left: calc(67% + 800px);
-    opacity: 0;
+    opacity: 0; /* Hidden If Too Far Right */
 }
 
+/* Slide Content Text */
 .list .item .content {
     position: absolute;
     top: 50%;
@@ -106,10 +110,12 @@ a:hover {
     display: none;
 }
 
+/* Only the 2nd Item (Main Visible Slide) Shows Text */
 .list .item:nth-child(2) .content {
     display: block;
 }
 
+/* Text Animations */
 .content .title {
     font-size: 100px;
     text-transform: uppercase;
@@ -170,6 +176,7 @@ a:hover {
     border-color: #14ff72cb;
 }
 
+/* Keyframes For Slide Text Animation */
 @keyframes animate {
     from {
         opacity: 0;
@@ -184,7 +191,7 @@ a:hover {
     }
 }
 
-/* next prev arrows */
+/* Navigation Arrows */
 .arrows {
     position: absolute;
     top: 80%;
@@ -217,7 +224,7 @@ a:hover {
     color: #000;
 }
 
-/* time running */
+/* /* Progress Bar/Time Running */
 .carousel .timeRunning {
     position: absolute;
     z-index: 1000;
@@ -239,7 +246,7 @@ a:hover {
     }
 }
 
-/* Responsive Design */
+/* Responsive Design (Tablet & Mobile) */
 @media screen and (max-width: 999px) {
     header {
         padding-left: 50px;
