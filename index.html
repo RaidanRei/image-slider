@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
-    <!-- Link to CSS -->
+    <!-- Link to CSS For Styling -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Header With Navigation Links -->
     <header>
         <nav>
             <a href="" class="active">Home</a>
@@ -20,9 +20,10 @@
         </nav>
     </header>
 
-    <!-- Slider -->
+    <!-- Slider/Main Carousel Container -->
     <div class="carousel">
         <div class="list">
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/fcwc.jpg);">
                 <div class="content">
                     <div class="title">FIFA</div>
@@ -30,25 +31,27 @@
                     <div class="des">The FIFA Club World Cup is a global tournament featuring champion clubs from each
                         of FIFA's six continental confederations, plus a host-country team, competing to be crowned the
                         world's best club team.</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.fifa.com/en/tournaments/mens/club-world-cup/usa-2025" target="_blank">See
                             More</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/ucl.jpg);">
                 <div class="content">
                     <div class="title">UEFA</div>
                     <div class="name">Champions League</div>
                     <div class="des">The UEFA Champions League is a prestigious annual soccer tournament organized by
                         the Union of European Football Associations (UEFA).</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.uefa.com/uefachampionsleague/" target="_blank">See More</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/uel.jpg);">
                 <div class="content">
                     <div class="title">UEFA</div>
@@ -56,12 +59,13 @@
                     <div class="des">The UEFA Europa League is an annual continental club football (soccer) competition
                         organized by UEFA for eligible European clubs, serving as the second-tier tournament below the
                         Champions League.</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.uefa.com/uefaeuropaleague/" target="_blank">See More</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/usc.webp);">
                 <div class="content">
                     <div class="title">UEFA</div>
@@ -70,12 +74,13 @@
                         features the winners of two major competitions from the previous season, such as a national
                         league and a national cup, or continental tournaments like the UEFA Champions League and Europa
                         League.</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.uefa.com/uefasupercup/" target="_blank">See More</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/uecl.jpg);">
                 <div class="content">
                     <div class="title">UEFA</div>
@@ -83,12 +88,13 @@
                     <div class="des">The UEFA Conference League is Europe's third-tier annual club football competition,
                         established by UEFA in the 2021-22 season, offering more clubs, particularly from smaller
                         national leagues, a chance to compete in European continental action.</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.uefa.com/uefaconferenceleague/" target="_blank">See More</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/uwcl.jpg);">
                 <div class="content">
                     <div class="title">UEFA</div>
@@ -96,12 +102,13 @@
                     <div class="des">The UEFA Women's Champions League (UWCL) is the premier European club football
                         (soccer) competition for women, organized by UEFA, the sport's governing body. It began in 2001
                         as the UEFA Women's Cup and was rebranded in 2009 as the Champions League.</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.uefa.com/womenschampionsleague/" target="_blank">See More</a>
                     </div>
                 </div>
             </div>
-
+            <!-- Each .item is a slide, background-image set inline -->
             <div class="item" style="background-image: url(images/uwec.avif);">
                 <div class="content">
                     <div class="title">UEFA</div>
@@ -109,6 +116,7 @@
                     <div class="des">The Women's Europa Cup is a new, secondary European club football competition from
                         UEFA for the 2025-26 season, serving as a second-tier tournament alongside the Women's Champions
                         League, and features a knockout format played over two legs.</div>
+                    <!-- Button with link to external site -->
                     <div class="btn">
                         <a href="https://www.uefa.com/womenseuropacup/" target="_blank">See More</a>
                     </div>
@@ -116,17 +124,17 @@
             </div>
         </div>
 
-        <!--next prev button-->
+        <!-- Navigation Arrows (Back/Next Buttons) -->
         <div class="arrows">
             <button class="prev">Back</button>
             <button class="next">Next</button>
         </div>
 
-        <!-- time running -->
+        <!-- Progress Bar Animation For Auto-Slide Timing -->
         <div class="timeRunning"></div>
     </div>
 
-    <!-- Link to JS -->
+    <!-- Link To JS For Functionality -->
     <script src="script.js"></script>
 </body>
 
